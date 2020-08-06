@@ -36,6 +36,8 @@ jobs:
    
     - name: run build
       run: yarn build
+      run: cd build
+      run: cp index.html 200.html
     
     - name: install surge
       run: npm install -g surge
